@@ -1,0 +1,972 @@
+    /* 引入图标 */
+    @font-face {
+        font-family: 'icomoon';
+        src: url('../icomoon-v1.0/fonts/icomoon.eot?x5bfos');
+        src: url('../icomoon-v1.0/fonts/icomoon.eot?x5bfos#iefix') format('embedded-opentype'),
+            url('../icomoon-v1.0/fonts/icomoon.ttf?x5bfos') format('truetype'),
+            url('../icomoon-v1.0/fonts/icomoon.woff?x5bfos') format('woff'),
+            url('../icomoon-v1.0/fonts/icomoon.svg?x5bfos#icomoon') format('svg');
+        font-weight: normal;
+        font-style: normal;
+        font-display: block;
+    }
+
+    /* 全局样式 */
+    * {
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+
+    body {
+        font-family: "-apple-system", "BlinkMacSystemFont", "Roboto", "Helvetica Neue", "MIcrosoft YaHei", sans-serif !important;
+        background: #f8f8f8;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    ul {
+        list-style: none;
+        text-align: center;
+        line-height: 40px;
+    }
+
+    li,
+    a,
+    i {
+        font-size: 12px;
+        text-decoration: none;
+        color: #b3b3b3;
+    }
+
+    li a:hover {
+        color: #fcbe7d;
+    }
+
+
+    /* 页面头部 */
+    .g-header {
+        box-shadow: 0 2px 27px 0 rgb(0 0 0 / 5%);
+        background-color: #fff;
+        display: block;
+    }
+
+
+    /* 登录栏 */
+    .g-nav {
+        height: 40px;
+    }
+
+    .g-nav .u-lu {
+        float: left;
+        margin-left: 45px;
+    }
+
+    .g-nav .u-lu li {
+        float: left;
+        margin-right: 26px;
+    }
+
+    .g-nav .u-lu .s-a {
+        color: #929292;
+    }
+
+    .g-nav .u-lu .s-a:hover {
+        color: #fcbe7d;
+    }
+
+    .g-nav .u-lu .s-abox {
+        border: 1px solid #e8e8e8;
+    }
+
+    .g-nav .u-lu i {
+        font-style: normal;
+    }
+
+    .u-lu .u-didian::before {
+        font-family: 'icomoon';
+        content: '\e947';
+        color: #999;
+    }
+
+    .g-nav .u-lu .s-acolor {
+        color: #fcbe7d;
+    }
+
+    .g-nav .u-ru {
+        float: right;
+        margin-right: 29px;
+    }
+
+    .g-nav .u-ru li {
+        float: right;
+        margin-right: 31px;
+    }
+
+
+    /* 搜索 */
+    .g-search {
+        height: 157px;
+        position: relative;
+    }
+
+    .g-search .m-box .g-logo {
+        width: 129px;
+        height: 46px;
+        display: inline-block;
+        overflow: hidden;
+        position: absolute;
+        left: 50px;
+    }
+
+    .g-search .m-box .g-logo img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .g-search .m-box {
+        padding-top: 27px;
+        display: inline-block;
+    }
+
+    .g-search .u-search {
+        padding-right: 80px;
+        width: 473px;
+        height: 41px;
+        position: absolute;
+        left: 430px;
+        border: 1px solid #e8e8e8;
+        border-radius: 0.3em;
+        overflow: hidden;
+    }
+
+    .u-search .u-text {
+        width: 100%;
+        height: 100%;
+        border: 0px;
+        float: left;
+        color: #b3b3b3;
+        text-indent: 15px;
+        font-size: 16px;
+        outline: none;
+    }
+
+    .u-search .u-button {
+        width: 80px;
+        height: 100%;
+        position: absolute;
+        background-color: #ffc300;
+        border: 0px;
+    }
+
+    .g-search .m-box .u-l {
+        position: absolute;
+        bottom: 0px;
+        left: 325px;
+    }
+
+    .g-search .m-box .u-l li {
+        float: left;
+        margin-right: 42px;
+    }
+
+    .g-search .m-box .u-l li a {
+        font-size: 18px;
+        color: #181818;
+        font-weight: 700;
+    }
+
+    .g-search .m-box .u-l li a:hover {
+        color: #fcbe7d;
+    }
+
+    .u-sousuo::before {
+        font-family: 'icomoon';
+        content: '\e986';
+        color: #000;
+        font-size: 20px;
+        position: absolute;
+        right: 32px;
+        top: 10px;
+        transform: skewY(10deg);
+    }
+
+
+    /* 页面头部部分往下 */
+    .g-subnav {
+        display: block;
+    }
+
+
+    /* 首页宣传图部分-没有使用 */
+    .m-tcard {
+        background-color: #fff;
+        width: 951px;
+        height: 240px;
+        margin-left: 285px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    .m-tcard .u-banner {
+        background-color: blue;
+        width: 550px;
+        height: 240px;
+        float: left;
+    }
+
+    .m-tcard .u-banner img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .m-tcard .u-life {
+        background-color: yellow;
+        width: 150px;
+        height: 240px;
+        margin-left: 10px;
+        margin-right: 10px;
+        float: left;
+
+    }
+
+    .m-tcard .u-life img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .m-tcard .u-login {
+        width: 229px;
+        height: 238px;
+        border: 1px solid #e8e8e8;
+        float: left;
+    }
+
+    .m-tcard .u-login img {
+        width: 70px;
+        height: 70px;
+        margin-top: 30px;
+        margin-left: 87px;
+        border-radius: 100%;
+    }
+
+    .m-tcard .u-login h5 {
+        margin-left: 90px;
+    }
+
+    .m-tcard .u-login a {
+
+        width: 120px;
+        height: 38px;
+        margin-top: 10px;
+        margin-left: 55px;
+        border: 1px solid #e8e8e8;
+        border-radius: 0.8em;
+        display: inline-block;
+        font-size: 13px;
+        color: #181818;
+        text-align: center;
+        line-height: 38px;
+    }
+
+    .m-bcard {
+        background-color: #fff;
+        width: 951px;
+        height: 165px;
+        margin-left: 285px;
+    }
+
+    .m-bcard .u-hotel {
+        background-color: aqua;
+        width: 269px;
+        height: 165px;
+        float: left;
+        margin-right: 11px;
+    }
+
+    .m-bcard .u-hotel img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .m-bcard .u-other {
+        background-color: red;
+        width: 269px;
+        height: 165px;
+        float: left;
+        margin-right: 10px;
+    }
+
+    .m-bcard .u-other img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .m-bcard .u-company {
+        background-color: rgb(0, 68, 255);
+        width: 150px;
+        height: 165px;
+        float: left;
+        margin-right: 10px;
+    }
+
+    .m-bcard .u-company img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .m-bcard .u-erweima {
+        width: 229px;
+        height: 163px;
+        border: 1px solid #e8e8e8;
+        float: left;
+
+    }
+
+    .m-bcard .u-erweima img {
+        width: 75px;
+        height: 75px;
+        margin-top: 10px;
+        margin-left: 75px;
+        margin-right: 75px;
+
+    }
+
+    .m-bcard .u-erweima h5 {
+        margin-left: 58px;
+    }
+
+    .m-bcard .u-erweima i {
+        color: #181818;
+        font-size: 13px;
+        font-style: normal;
+        margin-right: 5px;
+    }
+
+    .m-bcard .u-erweima .s-i {
+        color: red;
+        margin-left: 75px;
+    }
+
+
+    /* 侧边分类区域标题 */
+    .m-side-title {
+        padding: 15px;
+        overflow: hidden;
+    }
+
+    .m-side-title .title {
+        padding: 15px;
+        margin-left: 45px;
+        font-weight: 700;
+    }
+
+
+    /* 侧边分类区域 */
+    .m-side {
+        background-color: #fff;
+        width: 230px;
+        height: 475px;
+        border: solid 1px #e8e8e8;
+        position: relative;
+        left: 45px;
+        top: -50px;
+        overflow: hidden;
+        box-shadow: 0 10px 10px 0 rgb(0 0 0 / 5%);
+        display: inline-block;
+        margin: 0;
+    }
+
+    .m-side h5 {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .m-side i {
+        font-style: normal;
+    }
+
+    .m-side ul {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .m-side li {
+        padding-left: 10px;
+        font-size: 10px;
+        color: #929292;
+        line-height: 30px;
+        display: inline-flex;
+        height: 26px;
+    }
+
+    .m-side li:hover {
+        color: #fcbe7d;
+        background-color: #e8e8e8;
+    }
+
+    .m-side ul li a {
+        height: 15px;
+        display: inline;
+        font-weight: bolder;
+        color: #646464;
+        font-size: 10px;
+    }
+
+    .m-side ul li i {
+        margin-right: 10px;
+    }
+
+
+    /* 侧边分类区域弹出子菜单 */
+    .side-title {
+        top: 20px;
+        left: 20px;
+        position: absolute;
+        color: #181818;
+    }
+
+    .u-food-side {
+        display: none;
+        width: 460px;
+        height: 460px;
+        left: -542px;
+        top: -35px;
+        float: right;
+        position: relative;
+        background: #fff;
+        z-index: 10;
+        box-shadow: 10px 10px 10px 0 rgb(0 0 0 / 5%);
+        border: 1px solid #e8e8e8;
+        overflow: hidden;
+    }
+
+    .u-waimai-side {
+        display: none;
+        width: 460px;
+        height: 460px;
+        left: -542px;
+        top: -35px;
+        float: right;
+        position: relative;
+        background: #fff;
+        z-index: 10;
+        box-shadow: 10px 10px 10px 0 rgb(0 0 0 / 5%);
+        border: 1px solid #e8e8e8;
+        overflow: hidden;
+    }
+
+    .u-jiudian-side {
+        display: none;
+        width: 460px;
+        height: 460px;
+        left: -542px;
+        top: -35px;
+        float: right;
+        position: relative;
+        background: #fff;
+        z-index: 10;
+        box-shadow: 10px 10px 10px 0 rgb(0 0 0 / 5%);
+        border: 1px solid #e8e8e8;
+        overflow: hidden;
+    }
+
+    .u-minsu-side {
+        display: none;
+        width: 460px;
+        height: 460px;
+        left: -542px;
+        top: -35px;
+        float: right;
+        position: relative;
+        background: #fff;
+        z-index: 10;
+        box-shadow: 10px 10px 10px 0 rgb(0 0 0 / 5%);
+        border: 1px solid #e8e8e8;
+        overflow: hidden;
+    }
+
+    .u-maoyandianying-side {
+        display: none;
+        width: 460px;
+        height: 460px;
+        left: -542px;
+        top: -35px;
+        float: right;
+        position: relative;
+        background: #fff;
+        z-index: 10;
+        box-shadow: 10px 10px 10px 0 rgb(0 0 0 / 5%);
+        border: 1px solid #e8e8e8;
+        overflow: hidden;
+    }
+
+    .u-jipiao-side {
+        display: none;
+        width: 460px;
+        height: 460px;
+        left: -542px;
+        top: -35px;
+        float: right;
+        position: relative;
+        background: #fff;
+        z-index: 10;
+        box-shadow: 10px 10px 10px 0 rgb(0 0 0 / 5%);
+        border: 1px solid #e8e8e8;
+        overflow: hidden;
+    }
+
+    .u-ktv-side {
+        display: none;
+        width: 460px;
+        height: 460px;
+        left: -542px;
+        top: -35px;
+        float: right;
+        position: relative;
+        background: #fff;
+        z-index: 10;
+        box-shadow: 10px 10px 10px 0 rgb(0 0 0 / 5%);
+        border: 1px solid #e8e8e8;
+        overflow: hidden;
+    }
+
+    .u-shenghuofuwu-side {
+        display: none;
+        width: 460px;
+        height: 460px;
+        left: -542px;
+        top: -35px;
+        float: right;
+        position: relative;
+        background: #fff;
+        z-index: 10;
+        box-shadow: 10px 10px 10px 0 rgb(0 0 0 / 5%);
+        border: 1px solid #e8e8e8;
+        overflow: hidden;
+    }
+
+    .u-liren-side {
+        display: none;
+        width: 460px;
+        height: 460px;
+        left: -542px;
+        top: -35px;
+        float: right;
+        position: relative;
+        background: #fff;
+        z-index: 10;
+        box-shadow: 10px 10px 10px 0 rgb(0 0 0 / 5%);
+        border: 1px solid #e8e8e8;
+        overflow: hidden;
+    }
+
+    .u-jiehun-side {
+        display: none;
+        width: 460px;
+        height: 460px;
+        left: -542px;
+        top: -35px;
+        float: right;
+        position: relative;
+        background: #fff;
+        z-index: 10;
+        box-shadow: 10px 10px 10px 0 rgb(0 0 0 / 5%);
+        border: 1px solid #e8e8e8;
+        overflow: hidden;
+    }
+
+    .u-qinzi-side {
+        display: none;
+        width: 460px;
+        height: 460px;
+        left: -542px;
+        top: -35px;
+        float: right;
+        position: relative;
+        background: #fff;
+        z-index: 10;
+        box-shadow: 10px 10px 10px 0 rgb(0 0 0 / 5%);
+        border: 1px solid #e8e8e8;
+        overflow: hidden;
+    }
+
+    .u-jianshen-side {
+        display: none;
+        width: 460px;
+        height: 460px;
+        left: -542px;
+        top: -35px;
+        float: right;
+        position: relative;
+        background: #fff;
+        z-index: 10;
+        box-shadow: 10px 10px 10px 0 rgb(0 0 0 / 5%);
+        border: 1px solid #e8e8e8;
+        overflow: hidden;
+    }
+
+    .u-jiazhuang-side {
+        display: none;
+        width: 460px;
+        height: 460px;
+        left: -542px;
+        top: -35px;
+        float: right;
+        position: relative;
+        background: #fff;
+        z-index: 10;
+        box-shadow: 10px 10px 10px 0 rgb(0 0 0 / 5%);
+        border: 1px solid #e8e8e8;
+        overflow: hidden;
+    }
+
+    .u-peixun-side {
+        display: none;
+        width: 460px;
+        height: 460px;
+        left: -542px;
+        top: -35px;
+        float: right;
+        position: relative;
+        background: #fff;
+        z-index: 10;
+        box-shadow: 10px 10px 10px 0 rgb(0 0 0 / 5%);
+        border: 1px solid #e8e8e8;
+        overflow: hidden;
+    }
+
+    .u-yiliao-side {
+        display: none;
+        width: 460px;
+        height: 460px;
+        left: -542px;
+        top: -35px;
+        float: right;
+        position: relative;
+        background: #fff;
+        z-index: 10;
+        box-shadow: 10px 10px 10px 0 rgb(0 0 0 / 5%);
+        border: 1px solid #e8e8e8;
+        overflow: hidden;
+    }
+
+    .u-jiuba-side {
+        display: none;
+        width: 460px;
+        height: 460px;
+        left: -542px;
+        top: -35px;
+        float: right;
+        position: relative;
+        background: #fff;
+        z-index: 10;
+        box-shadow: 10px 10px 10px 0 rgb(0 0 0 / 5%);
+        border: 1px solid #e8e8e8;
+        overflow: hidden;
+    }
+
+
+    /* 首页宣传图行-上 */
+    .m-top-tap {
+        position: absolute;
+        overflow: hidden;
+        margin-left: 50px;
+        display: inline-flex;
+        padding: 10px;
+    }
+
+    .m-top-tap .slide-img {
+        width: 550px;
+        height: 240px;
+        box-shadow: 0 10px 10px 0 rgb(0 0 0 / 5%);
+    }
+
+    .m-top-tap .slide-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .m-top-tap .ad-zone-1 {
+        width: 150px;
+        height: 240px;
+        margin-left: 10px;
+        box-shadow: 0 10px 10px 0 rgb(0 0 0 / 5%);
+    }
+
+    .m-top-tap .ad-zone-1 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .m-top-tap .user-info {
+        width: 229px;
+        height: 240px;
+        margin-left: 10px;
+        border: 1px solid #e8e8e8;
+        box-shadow: 0 10px 10px 0 rgb(0 0 0 / 5%);
+        background: #fff;
+    }
+
+    .m-top-tap .user-info .user-avatar {
+        background: url(../images/avatar.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 75px;
+        height: 75px;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 8px;
+        border-radius: 50%;
+        border: 2px solid #E5E5E5;
+    }
+
+    .m-top-tap .user-info .user-greet {
+        font-size: 16px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 8px;
+    }
+
+    .m-top-tap .user-info .login-button {
+        width: 110px;
+        border: 1px solid #e5e5e5;
+        border-radius: 40px;
+        display: block;
+        line-height: 38px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 12px;
+        margin-bottom: 6px;
+        background: #ffbd00;
+        color: #333;
+    }
+
+    .m-top-tap .user-info .register-button {
+        width: 110px;
+        border: 1px solid #e5e5e5;
+        border-radius: 40px;
+        display: block;
+        line-height: 38px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 12px;
+        color: #333;
+    }
+
+
+    /* 首页宣传图行-下 */
+    .m-bottom-tap {
+        position: absolute;
+        overflow: hidden;
+        margin-left: 50px;
+        display: inline-flex;
+        padding: 10px;
+        margin-top: 250px;
+    }
+
+    .m-bottom-tap .ad-zone-2 {
+        width: 269px;
+        height: 165px;
+        box-shadow: 0 10px 10px 0 rgb(0 0 0 / 5%);
+    }
+
+    .m-bottom-tap .ad-zone-2 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .m-bottom-tap .ad-zone-3 {
+        margin-left: 10px;
+        width: 269px;
+        height: 165px;
+        box-shadow: 0 10px 10px 0 rgb(0 0 0 / 5%);
+    }
+
+    .m-bottom-tap .ad-zone-3 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .m-bottom-tap .ad-zone-4 {
+        margin-left: 10px;
+        width: 150px;
+        height: 165px;
+        box-shadow: 0 10px 10px 0 rgb(0 0 0 / 5%);
+    }
+
+    .m-bottom-tap .ad-zone-4 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .m-bottom-tap .ad-qr-code {
+        border: 1px solid #e8e8e8;
+        background: #fff;
+        margin-left: 10px;
+        width: 229px;
+        height: 165px;
+        box-shadow: 0 10px 10px 0 rgb(0 0 0 / 5%);
+    }
+
+    .m-bottom-tap .ad-qr-code .qr-code {
+        background: url(../images/erweima.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 75px;
+        height: 75px;
+        margin: 0 auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .m-bottom-tap .ad-qr-code .promo-title {
+        font-size: 12px;
+        text-align: center;
+        font-weight: bold;
+        color: #333333;
+        margin: 0 auto;
+    }
+
+    .m-bottom-tap .ad-qr-code .promo-title .high-light {
+        color: rgb(253, 30, 30);
+    }
+
+    .g-footer {
+        width: 100vw;
+        height: 20px;
+        bottom: 0;
+        background: #fff;
+        position: absolute;
+        overflow: hidden;
+        display: block;
+        box-shadow: 5px 0 5px 1px rgb(0 0 0 / 5%);
+    }
+
+
+    /* 特殊用途样式 */
+    .clearfix {
+        width: 1280px;
+        clear: both;
+        margin: 0 auto;
+    }
+
+
+    /* 首页子导航以下 */
+    .g-main {
+        width: 1195px;
+        height: 30px;
+        background: #fff;
+        overflow: hidden;
+        display: block;
+        box-shadow: 0 10px 10px 0 rgb(0 0 0 / 5%);
+        margin: 0 auto;
+    }
+
+
+    /* 图标 */
+    .m-side .u-food::before {
+        font-family: 'icomoon';
+        content: '\e9a3';
+        color: #ff8200;
+    }
+
+    .m-side .u-waimai::before {
+        font-family: 'icomoon';
+        content: '\e916';
+        color: #ffb500;
+    }
+
+    .m-side .u-jiudian::before {
+        font-family: 'icomoon';
+        content: '\e903';
+        color: #8f4a26;
+    }
+
+    .m-side .u-minsu::before {
+        font-family: 'icomoon';
+        content: '\e902';
+        color: #ffd36f;
+    }
+
+    .m-side .u-jipiao::before {
+        font-family: 'icomoon';
+        content: '\e9af';
+        color: #009ff2;
+    }
+
+    .m-side .u-ktv::before {
+        font-family: 'icomoon';
+        content: '\e9a1';
+        color: #00ba8e;
+    }
+
+    .m-side .u-jianshen::before {
+        font-family: 'icomoon';
+        content: '\e9b2';
+        color: #00a8f4;
+    }
+
+    .m-side .u-jiazhuang::before {
+        font-family: 'icomoon';
+        content: '\e996';
+        color: #0dc19a;
+    }
+
+    .m-side .u-jiuba::before {
+        font-family: 'icomoon';
+        content: '\e9a1';
+        color: #0dc19a;
+    }
+
+    .m-side .u-yiliao::before {
+        font-family: 'icomoon';
+        content: '\e998';
+        color: #00a8f4;
+    }
+
+    .m-side .u-peixun::before {
+        font-family: 'icomoon';
+        content: '\e920';
+        color: #0dc19a;
+    }
+
+    .m-side .u-qinzi::before {
+        font-family: 'icomoon';
+        content: '\eab6';
+        color: #e4e00a;
+    }
+
+    .m-side .u-maoyandianying::before {
+        font-family: 'icomoon';
+        content: '\e914';
+        color: #ff7300;
+    }
+
+    .m-side .u-shenghuofuwu::before {
+        font-family: 'icomoon';
+        content: '\e976';
+        color: #0f9bf8;
+    }
+
+    .m-side .u-liren::before {
+        font-family: 'icomoon';
+        content: '\e9dd';
+        color: #ff009d;
+    }
+
+    .m-side .u-jiehun::before {
+        font-family: 'icomoon';
+        content: '\e9de';
+        color: #ff00bf;
+    }
+
+    .m-side .u-more::before {
+        font-family: 'icomoon';
+        content: '\ea42';
+        color: #646464;
+        position: absolute;
+        right: 10px;
+        margin: auto;
+    }

@@ -399,6 +399,7 @@
         line-height: 30px;
         display: inline-flex;
         height: 26px;
+        font-weight: lighter;
     }
 
     .m-side li:hover {
